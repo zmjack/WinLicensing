@@ -17,7 +17,7 @@ namespace WinLicensing
             Echo.BorderTable(new[] { "Key", "Value" }, values.Select(v => new[]
             {
                 v.Key,
-                v.Value.Select(x => x.ToString("x2")+ " ").Join(""),
+                v.Value.Select(x => x.ToString("x2") + " ").Join(""),
             }).ToArray(), new[] { 48, 24 });
 
             Console.ReadLine();
